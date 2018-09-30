@@ -11,5 +11,6 @@ calc.div = function(a, b) {
 calc.getE = function() {
   return Math.E;
 };
+calc.mod = (a, b) => a % b;
 
 module.exports = calc;

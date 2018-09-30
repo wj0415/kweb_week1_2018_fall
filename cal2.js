@@ -17,11 +17,15 @@ function div(a, b) {
 function getE() {
   return Math.E;
 }
+function mod(a, b) {
+  return a % b;
+}
 
 module.exports = {
   add: add,
   sub: sub,
   mul: mul,
   div: div,
-  getE: getE
+  getE: getE,
+  mod: mod
 };

@@ -14,7 +14,8 @@ const server = http.createServer((req, res) => {
   res.end(
     `1 + 1 = ${cal1.add(1, 1)}\n` +
       `2 - 10 = ${cal2.sub(2, 10)}\n` +
-      `3 * 7 = ${cal3.mul(3, 7)}`
+      `3 * 7 = ${cal3.mul(3, 7)}\n` +
+      `10 % 3= ${cal3.mod(10, 3)}`
   );
   //const indexContent = fs.readFileSync(path.join(__dirname, "index.html"));
   //res.end(indexContent);
