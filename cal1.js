@@ -11,6 +11,10 @@ calc.div = function(a, b) {
 calc.getE = function() {
   return Math.E;
 };
-calc.mod = (a, b) => a % b;
-
+calc.mod = function(a, b) {
+  if (b == 0) {
+    return new Error("zero modulo error.");
+  }
+  return a % b;
+};
 module.exports = calc;

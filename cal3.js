@@ -19,5 +19,8 @@ exports.getE = function() {
 };
 
 exports.mod = function(a, b) {
+  if (b == 0) {
+    return new Error("zero modulo error.");
+  }
   return a % b;
 };

@@ -18,6 +18,9 @@ function getE() {
   return Math.E;
 }
 function mod(a, b) {
+  if (b == 0) {
+    return new Error("zero modulo error.");
+  }
   return a % b;
 }
 
